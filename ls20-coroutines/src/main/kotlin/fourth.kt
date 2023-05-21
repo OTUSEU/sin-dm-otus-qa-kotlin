@@ -1,5 +1,6 @@
 import kotlinx.coroutines.*
 
+@OptIn(DelicateCoroutinesApi::class)
 fun main() {
     runBlocking {
         val context = newFixedThreadPoolContext(2, "OtusPowerThread")
